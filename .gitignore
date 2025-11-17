@@ -4,7 +4,6 @@
 *.war
 copyright.json
 **/src/webui/bin
-**/.vscode
 **/.idea
 **/.settings
 src/appscan-config.xml

@@ -1,0 +1,32 @@
+name: Generated ZAPP document
+author: IBM Z Open Editor
+propertyGroups:
+  - name: search-all
+    libraries:
+      - name: syslib
+        type: local
+        locations:
+          - "**"
+      - name: maclib
+        type: local
+        locations:
+          - "**"
+      - name: proclib
+        type: local
+        locations:
+          - "**"
+
+profiles:
+  - name: zBuilder-userbuild
+    type: dbb
+    settings:
+      command: "$DBB_HOME/bin/dbb build"
+      lifecycle: user
+      lifecycleArgs:
+        - "--hlq ${dbbHlq}"
+      additionalDependencies:
+        - "dbb-app.yaml"
+        - "Cobol.yaml"
+      logFilePatterns:
+        - "${buildFile.basename}-*.log"
+        - "BuildReport.*"
