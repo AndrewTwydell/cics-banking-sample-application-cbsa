@@ -1,0 +1,11 @@
+# build configuration
+version: 1.0.0
+
+# application configuration
+application:
+  name: cbsa
+
+  tasks:
+    - task: Cobol
+      sources:
+        - "**/src/base/cobol_src/*.cbl"
