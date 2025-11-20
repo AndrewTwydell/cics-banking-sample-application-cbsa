@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "zOpenDebug",
+      "request": "launch",
+      "name": "Z Open Debug: Connect to a parked debug session",
+      "connection": {
+        "type": "zowe",
+        "name": "winmvs2c.DEBUG"
+      }
+    },
+  ]
+}

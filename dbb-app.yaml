@@ -1,0 +1,31 @@
+---
+version: 1.0.0
+application:
+  name: cbsa
+  tasks:
+    - task: ImpactAnalysis
+      variables:
+        - name: impactQueryPatterns
+          value:
+            # Cobol program dependency patterns
+            - languageExt: cbl
+              dependencyPatterns:
+                - ${APP_DIR_NAME}/src/base/cobol_copy/*.cpy # Copybook source dependency
+                - ${APP_DIR_NAME}/src/base/bms_src/*.bms # BMS Map source dependency
+                - ${APP_DIR_NAME}/src/base/cobol_src/*.cbl # Static link dependency
+
+    - task: Cobol
+      sources:
+        - "**/src/base/cobol_src/*.cbl"
+      variables:
+        - name: dependencySearchPath
+          value: search:${WORKSPACE}/?path=${APP_DIR_NAME}/src/base/cobol_copy/*.cpy
+        - name: LOAD_LLQ
+          value: LOADLIB
+        - name: deployType
+          value: LOADLIB
+
+    - task: ScannerInit
+      variables:
+        - name: loadModuleExcludeList
+          value: "${SDFHLOAD}.*"

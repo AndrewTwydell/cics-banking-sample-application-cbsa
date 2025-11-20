@@ -1,0 +1,9 @@
+{
+  "zopeneditor.userbuild.userSettings": {
+    "localLogDir": "./dbbLogs",
+    "dbbDefaultZappProfile": "zBuilder-userbuild",
+    "dbbWorkspace": "/u/twydell",
+    "dbbLogDir": "/u/twydell/dbbLogs",
+    "dbbHlq": "TWYDELL.DBB2.CBSA"
+  }
+}

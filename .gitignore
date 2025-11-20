@@ -4,7 +4,6 @@
 *.war
 copyright.json
 **/src/webui/bin
-**/.vscode
 **/.idea
 **/.settings
 src/appscan-config.xml
@@ -26,3 +25,4 @@ CSAR-CBSA.xml
 CSAR-CBSA.xml.out
 appscan-config.xml
 appscan-config.xml
+dbbLogs/
