@@ -1,0 +1,14 @@
+*       git-encoding=UTF-8 zos-working-tree-encoding=ISO8859-1
+
+*.jpg   git-encoding=BINARY   zos-working-tree-encoding=BINARY binary
+*.jpeg  git-encoding=BINARY   zos-working-tree-encoding=BINARY binary
+*.ico   git-encoding=BINARY   zos-working-tree-encoding=BINARY binary
+*.png   git-encoding=BINARY   zos-working-tree-encoding=BINARY binary
+*.sketch   git-encoding=BINARY   zos-working-tree-encoding=BINARY binary
+*.aar   git-encoding=BINARY   zos-working-tree-encoding=BINARY binary
+*.sar   git-encoding=BINARY   zos-working-tree-encoding=BINARY binary
+
+*.jcl   git-encoding=UTF-8 zos-working-tree-encoding=ibm-1047
+*.cbl   git-encoding=UTF-8 zos-working-tree-encoding=ibm-1047
+*.cpy   git-encoding=UTF-8 zos-working-tree-encoding=ibm-1047
+*.bms   git-encoding=UTF-8 zos-working-tree-encoding=ibm-1047
